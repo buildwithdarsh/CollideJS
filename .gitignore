@@ -1,0 +1,9 @@
+node_modules
+dist
+example/dist
+.rollup.cache
+*.tsbuildinfo
+.DS_Store
+.env
+.env.*
+.vercel
