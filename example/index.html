@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>collide.js — IntersectionObserver for any two elements</title>
+<title>CollideJS — IntersectionObserver for any two elements</title>
 <meta name="description" content="Tiny DOM collision observer — proximity, collision, and time-to-collision detection between any elements. 2.1KB gzipped, zero deps." />
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <style>
@@ -204,7 +204,7 @@
       <span class="badge">MIT license</span>
     </div>
 
-    <h1>collide<span class="dot">.</span>js</h1>
+    <h1>Collide<span class="dot">JS</span></h1>
     <p class="tagline">IntersectionObserver for <em>any two elements</em>. Proximity, collision, and time-to-collision — with real metrics.</p>
 
     <div class="cta">
@@ -315,7 +315,7 @@ m.<span class="f">closingSpeed</span></pre>
 
   <section id="magdemo">
     <h2>Magnetic snap</h2>
-    <p class="sub">Drag the purple node. As it gets <em>within 120px</em>, <code>collide.js</code> feeds the direction vector into a simple easing loop that pulls it toward the target. Release inside the target to lock in.</p>
+    <p class="sub">Drag the purple node. As it gets <em>within 120px</em>, <code>CollideJS</code> feeds the direction vector into a simple easing loop that pulls it toward the target. Release inside the target to lock in.</p>
     <div class="magwrap" id="magwrap">
       <div class="mag-target">Target</div>
       <div class="mag-node" id="magNode" style="top: 60px; left: 60px;">Drag</div>
@@ -342,7 +342,7 @@ m.<span class="f">closingSpeed</span></pre>
 
   <section id="avoid">
     <h2>Crowd avoidance</h2>
-    <p class="sub">An N×N observer pushes every node away from every other when they get within 20px. Classic separation steering, driven entirely by collide.js metrics.</p>
+    <p class="sub">An N×N observer pushes every node away from every other when they get within 20px. Classic separation steering, driven entirely by CollideJS metrics.</p>
     <div class="avoidwrap" id="avoidwrap"></div>
   </section>
 
@@ -370,7 +370,7 @@ m.<span class="f">closingSpeed</span></pre>
       </div>
       <div class="install-body">
         <button class="copy-btn" id="copyInstall">Copy</button>
-        <pre id="installCode" data-cmd="npm">npm install @buildwithdarsh/collide.js</pre>
+        <pre id="installCode" data-cmd="npm">npm install @buildwithdarsh/collidejs</pre>
       </div>
     </div>
 
@@ -379,7 +379,7 @@ m.<span class="f">closingSpeed</span></pre>
         <button class="active" disabled style="color: var(--text); border-bottom-color: var(--pink); cursor: default;">usage.ts</button>
       </div>
       <div class="install-body">
-        <pre><span class="k">import</span> Collide <span class="k">from</span> <span class="s">'@buildwithdarsh/collide.js'</span>;
+        <pre><span class="k">import</span> Collide <span class="k">from</span> <span class="s">'@buildwithdarsh/collidejs'</span>;
 
 <span class="c">// Watch two elements — fires near, collide, separate</span>
 <span class="k">const</span> pair = Collide.<span class="f">watch</span>(cardA, cardB, { near: <span class="s">80</span> });
@@ -410,18 +410,18 @@ all.<span class="f">on</span>(<span class="s">'collide'</span>, (a, b, m) =&gt; 
 <script src="dist/collide.umd.js"></script>
 <script>
 (function () {
-  if (!window.Collide) { console.error('collide.js failed to load'); return; }
+  if (!window.Collide) { console.error('CollideJS failed to load'); return; }
   var C = window.Collide;
 
   /* =======================
      Install tabs + copy
      ======================= */
   var INSTALL_CMDS = {
-    npm:  'npm install @buildwithdarsh/collide.js',
-    pnpm: 'pnpm add @buildwithdarsh/collide.js',
-    yarn: 'yarn add @buildwithdarsh/collide.js',
-    bun:  'bun add @buildwithdarsh/collide.js',
-    cdn:  '<script src="https://cdn.jsdelivr.net/npm/@buildwithdarsh/collide.js"></' + 'script>',
+    npm:  'npm install @buildwithdarsh/collidejs',
+    pnpm: 'pnpm add @buildwithdarsh/collidejs',
+    yarn: 'yarn add @buildwithdarsh/collidejs',
+    bun:  'bun add @buildwithdarsh/collidejs',
+    cdn:  '<script src="https://cdn.jsdelivr.net/npm/@buildwithdarsh/collidejs"></' + 'script>',
   };
   var installCode = document.getElementById('installCode');
   var installTabs = document.querySelectorAll('#install .install-tabs button[data-tab]');

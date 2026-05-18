@@ -19,7 +19,7 @@ export class Emitter {
     const set = this._map.get(event);
     if (!set) return;
     for (const fn of set) {
-      try { fn(...args); } catch (e) { console.error('[collide.js]', e); }
+      try { fn(...args); } catch (e) { console.error('[CollideJS]', e); }
     }
   }
 }

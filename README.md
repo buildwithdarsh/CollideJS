@@ -4,14 +4,14 @@
 
 <br />
 
-<img src="https://img.shields.io/badge/collide.js-v1.0.0-ff375f?style=for-the-badge&labelColor=000000" alt="version" />
+<img src="https://img.shields.io/badge/collidejs-v1.0.0-ff375f?style=for-the-badge&labelColor=000000" alt="version" />
 <img src="https://img.shields.io/badge/gzip-~2.1KB-30d158?style=for-the-badge&labelColor=000000" alt="gzip" />
 <img src="https://img.shields.io/badge/dependencies-0-bf5af2?style=for-the-badge&labelColor=000000" alt="deps" />
 <img src="https://img.shields.io/badge/license-MIT-ff9f0a?style=for-the-badge&labelColor=000000" alt="license" />
 
 <br /><br />
 
-# collide.js
+# CollideJS
 
 **IntersectionObserver for any two elements.**
 
@@ -21,18 +21,18 @@ Proximity, collision, and time-to-collision detection for the DOM. Tiny, shape-a
 
 ---
 
-## Why collide.js?
+## Why CollideJS?
 
 The browser gives you `IntersectionObserver` — but only against the viewport (or one ancestor). There's nothing built-in for "is this element near, or hitting, *that other element*?"
 
-`collide.js` fills that gap. It's ~2KB, has zero deps, and uses a single shared RAF loop to batch all observer reads.
+`CollideJS` fills that gap. It's ~2KB, has zero deps, and uses a single shared RAF loop to batch all observer reads.
 
 ---
 
 ## Quick Start
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@buildwithdarsh/collide.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@buildwithdarsh/collidejs"></script>
 <script>
   const pair = Collide.watch(cardA, cardB, { near: 80 });
   pair.on('near',     (m) => console.log('near:', m.distance, 'px'));
@@ -44,11 +44,11 @@ The browser gives you `IntersectionObserver` — but only against the viewport (
 Or with a bundler:
 
 ```bash
-npm install @buildwithdarsh/collide.js
+npm install @buildwithdarsh/collidejs
 ```
 
 ```ts
-import Collide from '@buildwithdarsh/collide.js';
+import Collide from '@buildwithdarsh/collidejs';
 ```
 
 ---

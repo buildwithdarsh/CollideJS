@@ -1,5 +1,5 @@
 {
-  "name": "@buildwithdarsh/collide.js",
+  "name": "@buildwithdarsh/collidejs",
   "version": "1.0.0",
   "description": "IntersectionObserver for any two elements — proximity, collision, and time-to-collision detection for the DOM",
   "main": "dist/collide.umd.js",
